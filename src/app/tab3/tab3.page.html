@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Location
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,24 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Location</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div>
+    <h1>Location</h1>
+    <p>This is not an actual sensor, but rather a combination of data collected from different sources (Global Positioning System, or GPS, cell-ID, and Wi-Fi) that allows us to determine the device’s geographical location (in latitude/longitude) at different levels of resolution (coarse or fine). GPS data is obtained from a network of satellites orbiting Earth and has an accuracy of around 4.9 meters (16 feet) under open sky. Location information derived from cellular tower or Wi-Fi access point IDs has much lower accuracy (between 5,300 feet and 1 mile), but uses very little energy as it works passively, in contrast to the active location- fixing done by GPS.</p>
+    
+    <div>
+      <ion-button class="align-center" shape="round" color="primary">Read Data</ion-button>
+    </div>
+    <ion-card color="warning" size="small">
+      <ion-card-header>
+        <ion-card-title>Location Info</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        No data to show
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

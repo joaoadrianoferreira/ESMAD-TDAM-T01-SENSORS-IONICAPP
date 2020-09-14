@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Gyroscope
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,26 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Gyroscope</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div>
+    <h1>Gyroscope</h1>
+    <p>The gyroscope measures the angular velocity of the device; that is, the rate of rotation (in radians/second) around each of the same three axes as defined for the accelerometer sensor. Although it is similar to the accelerometer in that both can be used to determine the position of orientation of the device, the gyroscope can sense rotation, whereas the accelerometer cannot. Because of this, the gyroscope is very useful when we need to measure rotational movement, such as spinning, turning, and so on.</p>
+    <img src="../../assets/images/acelerometer.png" />
+
+    <div>
+      <ion-button class="align-center" shape="round" color="primary">Read Data</ion-button>
+    </div>
+    <ion-card color="warning" size="small">
+      <ion-card-header>
+        <ion-card-title>Gyroscope Info</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        No data to show
+      </ion-card-content>
+    </ion-card>
+  </div>
+
 </ion-content>

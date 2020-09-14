@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Acelerometer
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,26 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Acelerometer</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div>
+    <h1>{{title}}</h1>
+    <p>{{text}}</p>
+    <img src="../../assets/images/acelerometer.png" />
+
+    <div>
+      <ion-button class="align-center" shape="round" color="primary"  (click)="readAcelerometerInfo()">Read Data</ion-button>
+    </div>
+    <ion-card color="warning" size="small">
+      <ion-card-header>
+        <ion-card-title>{{card_subtitle}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{card_content}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+
 </ion-content>
