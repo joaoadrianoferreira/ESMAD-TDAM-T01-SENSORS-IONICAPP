@@ -14,19 +14,19 @@
   </ion-header>
 
   <div>
-    <h1>Gyroscope</h1>
-    <p>The gyroscope measures the angular velocity of the device; that is, the rate of rotation (in radians/second) around each of the same three axes as defined for the accelerometer sensor. Although it is similar to the accelerometer in that both can be used to determine the position of orientation of the device, the gyroscope can sense rotation, whereas the accelerometer cannot. Because of this, the gyroscope is very useful when we need to measure rotational movement, such as spinning, turning, and so on.</p>
+    <h1>{{title}}</h1>
+    <p>{{text}}</p>
     <img src="../../assets/images/acelerometer.png" />
 
     <div>
-      <ion-button class="align-center" shape="round" color="primary">Read Data</ion-button>
+      <ion-button class="align-center" shape="round" color="primary" (click)="readGyroscopeInfo()">Read Data</ion-button>
     </div>
     <ion-card color="warning" size="small">
       <ion-card-header>
-        <ion-card-title>Gyroscope Info</ion-card-title>
+        <ion-card-title>{{card_subtitle}}</ion-card-title>
       </ion-card-header>
-      <ion-card-content>
-        No data to show
+      <ion-card-content style="white-space: pre-line">
+        {{card_content}}
       </ion-card-content>
     </ion-card>
   </div>

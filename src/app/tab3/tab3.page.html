@@ -14,18 +14,18 @@
   </ion-header>
 
   <div>
-    <h1>Location</h1>
-    <p>This is not an actual sensor, but rather a combination of data collected from different sources (Global Positioning System, or GPS, cell-ID, and Wi-Fi) that allows us to determine the device’s geographical location (in latitude/longitude) at different levels of resolution (coarse or fine). GPS data is obtained from a network of satellites orbiting Earth and has an accuracy of around 4.9 meters (16 feet) under open sky. Location information derived from cellular tower or Wi-Fi access point IDs has much lower accuracy (between 5,300 feet and 1 mile), but uses very little energy as it works passively, in contrast to the active location- fixing done by GPS.</p>
+    <h1>{{title}}</h1>
+    <p>{{text}}</p>
     
     <div>
-      <ion-button class="align-center" shape="round" color="primary">Read Data</ion-button>
+      <ion-button class="align-center" shape="round" color="primary" (click)="readLocationInfo()">Read Data</ion-button>
     </div>
     <ion-card color="warning" size="small">
       <ion-card-header>
-        <ion-card-title>Location Info</ion-card-title>
+        <ion-card-title>{{card_subtitle}}</ion-card-title>
       </ion-card-header>
-      <ion-card-content>
-        No data to show
+      <ion-card-content style="white-space: pre-line">
+        {{card_content}}
       </ion-card-content>
     </ion-card>
   </div>

@@ -6,5 +6,17 @@
     <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener"/>
   </feature>
 
+  <feature name="Fingerprint">
+    <param name="android-package" value="de.niklasmerz.cordova.biometric.Fingerprint"/>
+  </feature>
+
+  <feature name="Geolocation">
+    <param name="android-package" value="org.apache.cordova.geolocation.Geolocation"/>
+  </feature>
+
+  <feature name="Gyroscope">
+    <param name="android-package" value="com.android.plugins.GyroscopeListener"/>
+  </feature>
+
   
 </widget>

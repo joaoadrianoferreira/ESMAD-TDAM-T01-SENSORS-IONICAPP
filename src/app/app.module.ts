@@ -10,6 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { DeviceMotion } from '@ionic-native/device-motion/ngx';
+import { Gyroscope } from '@ionic-native/gyroscope/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,7 +22,10 @@ import { DeviceMotion } from '@ionic-native/device-motion/ngx';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    DeviceMotion
+    DeviceMotion,
+    Gyroscope,
+    Geolocation,
+    FingerprintAIO,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Fingerprint
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Fingerprint</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <h1>{{title}}</h1>
+    <p>{{text}}</p>
+    
+    <div>
+      <ion-button class="align-center" shape="round" color="primary" (click)="readFingerPrintInfo()">Read Data</ion-button>
+    </div>
+    <ion-card color="warning" size="small">
+      <ion-card-header>
+        <ion-card-title>{{card_subtitle}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="white-space: pre-line">
+        {{card_content}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
