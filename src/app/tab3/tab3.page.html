@@ -28,5 +28,19 @@
         {{card_content}}
       </ion-card-content>
     </ion-card>
+    <div>
+      <ion-button class="align-center" shape="round" color="primary" (click)="saveLocation()">Save Location</ion-button>
+    </div>
+    <ion-card color="warning" size="small">
+      <ion-card-header>
+        <ion-card-title>{{card_subtitle1}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="white-space: pre-line">
+        {{records}}
+      </ion-card-content>
+    </ion-card>
+    <div>
+      <ion-button class="align-center" shape="round" color="primary" (click)="getRecords()">Load Records</ion-button>
+    </div>
   </div>
 </ion-content>

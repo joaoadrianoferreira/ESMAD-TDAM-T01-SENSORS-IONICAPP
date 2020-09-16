@@ -14,6 +14,9 @@ import { Gyroscope } from '@ionic-native/gyroscope/ngx';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
 
+import { SQLite } from '@ionic-native/sqlite/ngx';
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -26,6 +29,7 @@ import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
     Gyroscope,
     Geolocation,
     FingerprintAIO,
+    SQLite
   ],
   bootstrap: [AppComponent]
 })
