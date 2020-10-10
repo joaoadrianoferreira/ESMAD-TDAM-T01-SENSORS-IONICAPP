@@ -11,7 +11,7 @@ Aplicação em IONIC criada para demonstrar a manipulação e armazenamento de d
 
 ```sh
 $ git clone https://github.com/joaoadrianoferreira/ESMAD-TDAM-T01-SENSORS-IONICAPP
-$ cd cd ESMAD-TDAM-T01-SENSORS-IONICAPP/
+$ cd ESMAD-TDAM-T01-SENSORS-IONICAPP/
 $ npm install
 $ ionic serve
 ```
